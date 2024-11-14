@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology Trends in [Your Country]</title>
+    <style>
+        /* CSS Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #0073e6;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        section {
+            margin: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 150px;
+            height: auto;
+            border: 2px solid #333;
+        }
+
+        button {
+            background-color: #0073e6;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #005bb5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f1f1f1;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML Structure -->
+    <header>
+        <h1>Technology Trends in [Your Country]</h1>
+        <p>An interactive project to explore recent technology advancements</p>
+    </header>
+
+    <section id="content">
+        <h2>Overview of Technology Trends</h2>
+        <p>Brief introduction about technology trends in your country...</p>
+        
+        <!-- Image Gallery -->
+        <h3>Image Gallery</h3>
+        <div class="gallery">
+            <img src="image1.jpg" alt="Technology Trend 1">
+            <img src="image2.jpg" alt="Technology Trend 2">
+            <img src="image3.jpg" alt="Technology Trend 3">
+        </div>
+
+        <!-- Interactive Section with JavaScript -->
+        <h3>Discover More</h3>
+        <button onclick="showMoreInfo()">Click to Reveal More Info</button>
+        <p id="moreInfo" style="display: none;">Here is some additional information about technology trends...</p>
+    </section>
+
+    <!-- Video and Audio Embeds -->
+    <section id="multimedia">
+        <h2>Multimedia Features</h2>
+        <video controls width="300">
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <footer>
+        <p>Project by: [Your Name]</p>
+        <p>&copy; 2024</p>
+    </footer>
+
+    <script>
+        // JavaScript for Interactivity
+        function showMoreInfo() {
+            const info = document.getElementById('moreInfo');
+            if (info.style.display === 'none') {
+                info.style.display = 'block';
+            } else {
+                info.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
