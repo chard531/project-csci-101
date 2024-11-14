@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+</head>
+<body>
+    <h2>Rolling Dice</h2>
+    <p>Guess number (0 to 10): <input type="text" id="guessNumber" /></p>
+    <p>Random number (0 to 10): <input type="text" id="randomNumber" disabled /></p>
+    <p>Status: <input type="text" id="status" disabled /></p>
+    <p>Your name: <input type="text" id="userName" /></p>
+    <button onclick="runGame()">RUN</button>
+
+    <script>
+        function runGame() {
+            
+            const guess = Number(document.getElementById("guessNumber").value);
+            const userName = document.getElementById("userName").value;
+           
+const randomNum = Math.floor(Math.random() * 11);
+            document.getElementById("randomNumber").value = randomNum;
+
+            
+            let message = "";
+            if (guess > randomNum) 
+            {message = "Very good: you win";} 
+            else if (guess < randomNum) 
+            {message = "Bad luck: you lose";} 
+            else 
+            {message = ">>> The two numbers are identical <<<";}
+
+            
+            document.getElementById("status").value = message;
+        }
+    </script>
+</body>
+</html>
+
